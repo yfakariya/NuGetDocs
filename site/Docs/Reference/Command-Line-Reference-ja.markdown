@@ -1,4 +1,4 @@
-﻿<!-- Revision: 6bf8ca8e0121d58c3735cb260b433c10caf4e0c7 2011/11/19 5:55:14 -->
+﻿<!-- 3 28 22:28:42 2012 cf44249e0c1b89cacd73c082ee3bdd6bc9c5aafe -->
 # コマンドラインリファレンス
 
 [ここ](http://nuget.codeplex.com/releases/view/58939)からコマンドラインツールをダウンロードできます。
@@ -100,7 +100,7 @@
 <table>
     <tr>
         <td>Source</td>
-        <td>インストールに使用するパッケージソースのリスト。</td>
+        <td>インストールに使用するパッケージソースのリスト。区切り文字はセミコロンです。</td>
     </tr>
     <tr>
         <td>OutputDirectory</td>
@@ -151,7 +151,7 @@
 <table>
     <tr>
         <td>Source</td>
-        <td>検索するパッケージソースのリスト。</td>
+        <td>検索するパッケージソースのリスト。区切り文字はセミコロンです。</td>
     </tr>
     <tr>
         <td>Verbose</td>
@@ -454,7 +454,7 @@
 <table>
     <tr>
         <td>Source</td>
-        <td>更新を検索するパッケージソースの一覧。</td>
+        <td>更新を検索するパッケージソースの一覧。区切り文字はセミコロンです。</td>
     </tr>
     <tr>
         <td>Id</td>
