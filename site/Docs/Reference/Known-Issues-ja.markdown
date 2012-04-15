@@ -121,7 +121,7 @@ Package Manager console を使用して FluentNHibernate をインストール�
 
 Visual Studio 拡張機能マネージャーを使用して NuGet をインストールしようとし、管理者として実行していない場合、「Run As」は「このプログラムを制限付きアクセス権で実行する」というラベルの付いたチェックボックスが、既定でチェックされた状態で表示されます。
 
-![Run As Restricted Dialog](images/RunAsRestricted.png)
+![制限付きアクセス権で実行するダイアログ](images/RunAsRestricted.png)
 
 チェックされた状態で OK をクリックすると、Visual Studio がクラッシュします。NuGet のインストール前にこのオプションのチェックを外すようにしてください。
 

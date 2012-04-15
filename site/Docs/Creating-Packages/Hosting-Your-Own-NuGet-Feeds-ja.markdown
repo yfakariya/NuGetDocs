@@ -10,32 +10,32 @@
 まずは、カスタムフィードを含むパッケージを作成、または取得し、それからあるフォルダーにそれらすべてを配置します。次の例では、フォルダーはローカルの *c:* ドライブに作成されています。
 そのフォルダーは単一のパッケージ（.nupkg ファイル）を含んでいます。
 
-![LocalNuGetFeed-folder.png](images/LocalNuGetFeed-folder.png)
+![ローカルの NuGet フィードフォルダー](images/LocalNuGetFeed-folder.png)
 
 次に、そのフォルダーを NuGet フィードの場所として指定します。Visual Studio の **ツール** メニュから **Library Package Manager** を選択し、**Packae Manager Settings** をクリックします。
 
-![Package Manager Settings in menu](images/Package-Manager-Settings-in-menu.png)
+![メニュでの Package Manager の設定](images/Package-Manager-Settings-in-menu.png)
 
 **Options** ダイアログボックスが表示されます。
 
-![Options dialog box](images/Options-dialog-box.png)
+![Options ダイアログボックス](images/Options-dialog-box.png)
 
 **Name** テキストボックスには、フィードの名前を入力します。
 **Source** テキストボックスには、パッケージのあるフォルダーのパスを入力します。
 
-![Available Package Sources dialog box without new feed](images/Available-Package-Sources-without-new-feed.png)
+![新しいフィードのない Available Package Sources ダイアログボックス](images/Available-Package-Sources-without-new-feed.png)
 
 **Add** をクリックします。ローカルのフォルダーがもう一つの NuGet フィードソースになります。
 
-![Available Package Sources dialog box with new feed](images/Available-Package-Sources-with-new-feed.png)
+![新しいフィードのある Available Package Sources ダイアログボックス](images/Available-Package-Sources-with-new-feed.png)
 
 この新しいフィードを使用してパッケージをインストールするには、**Package Manager Console** ウィンドウで、**Package source** リストで新しいフィードを選択します。
 
-![Selecting local feed in Package Manager Console](images/Selecting-local-feed-in-Package-Manager-Console.png)
+![Package Manager Console でのローカルフィードの選択](images/Selecting-local-feed-in-Package-Manager-Console.png)
 
 **Manage NuGet Packages** ダイアログボックスの **Online** タブで新しいフィードを選択することもできます。
 
-![Selecting local feed in the Manage NuGet Packages dialog](images/Selecting-local-feed-in-Add-Library-Package-Reference.png)
+![Manage NuGet Packages ダイアログでのローカルフィードの選択](images/Selecting-local-feed-in-Add-Library-Package-Reference.png)
 
 ## リモートフィードの作成
 
@@ -47,11 +47,11 @@ IIS を実行しているサーバー上でリモート（または内部）フ�
 
 **ファイル** | **新規作成** | **プロジェクト** メニュオプションを選択し（または Ctrl + Shift + N を押し）、新規プロジェクトの作成ダイアログを表示させ、次のスクリーンショットのように **ASP.NET 空の Web アプリケーション** を選択します。
 
-![New Project dialog box](images/New-Project-dialog-box.png)
+![新しいプロジェクト ダイアログボックス](images/New-Project-dialog-box.png)
 
 これによって完全に空のプロジェクトのテンプレートが作成されます。
 
-![New project in Solution Explorer](images/New-project-in-Solution-Explorer.png)
+![ソリューション エクスプローラーでの新しいプロジェクト](images/New-project-in-Solution-Explorer.png)
 
 ### ステップ 2：NuGet.Server Package をインストールする
 
@@ -60,7 +60,7 @@ IIS を実行しているサーバー上でリモート（または内部）フ�
 **Online** タブをクリックしてから、右上の検索ボックスに **NuGet.Server** と入力します。
 次の画像のように表示される **NuGet.Server** パッケージの **Install** をクリックします。
 
-![NuGet.Server package](images/NuGet.Server-package.png)
+![NuGet.Server パッケージ](images/NuGet.Server-package.png)
 
 ### ステップ 3：Packages フォルダーを構成する
 
@@ -79,7 +79,7 @@ IIS を実行しているサーバー上でリモート（または内部）フ�
 
 次のスクリーンショットでは、既定の **Packages** フォルダーにいくつかのパッケージが手動で追加されていることがわかると思います。
 
-![Adding packages to the packages folder](images/Adding-packages-to-the-packages-folder.png)
+![Packages フォルダーへのパッケージの追加](images/Adding-packages-to-the-packages-folder.png)
 
 <p class="info">このパッケージを発行したい（たとえば、アプリケーションのメニュの ビルド -> 発行 から）場合には、ソリューションエクスプローラーで .nupkg ファイルを選択して、ビルド アクションプロパティを「コンテンツ」に変更する必要もあります。</p>
 
@@ -96,16 +96,16 @@ IIS を実行しているサーバー上でリモート（または内部）フ�
 
 Ctrl + F5 を押してサイトを実行できます。そうすると、次に何をするのかを示す情報が表示されます。
 
-![Package feed home page](images/Package-feed-home-page.png)
+![パッケージフィードのホームーページ](images/Package-feed-home-page.png)
 
 「here」をクリックすると、パッケージが Atom 形式の OData フィードで表示されます。
 
-![OData over ATOM package feed](images/OData-over-ATOM-package-feed.png)
+![Atom パッケージフィード形式の OData](images/OData-over-ATOM-package-feed.png)
 
 ここで、他のサイトと同じように Web サイトを配置するために必要なことが終わりました。次のスクリーンショットのように、（Visual Studio の NuGet のダイアログで）Settings ボタンをクリックして、このフィードをパッケージソースのセットに追加できます。
 
 
-![Adding new feed to package sources](images/Adding-new-feed-to-package-sources.png)
+![パッケージソースへの新しいフィードの追加](images/Adding-new-feed-to-package-sources.png)
 
 入力する必要のある <a href="http://yourdomain/nuget/">http://yourdomain/nuget/</a> という URL は、サイトの配置方法に依存して変わることに注意してください。
 
