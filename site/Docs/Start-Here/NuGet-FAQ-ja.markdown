@@ -21,7 +21,7 @@ NuGet Package Manager Console では [PowerShell 2.0](http://support.microsoft.c
 
 **そのようなことはまったくありません。**MVC 3 なしで NuGet をインストールする方法については、[NuGet のインストール](Installing-NuGet)を参照してください。
 
-## Package Manager Console や Manage NuGet Packages ダイアログボックスがクラッシュしたり、例外を表示したりするのはなぜですか？
+## パッケージ マネージャー コンソール（Package Manager Console）や NuGet パッケージの管理（Manage NuGet Packages）ダイアログボックスがクラッシュしたり、例外を表示したりするのはなぜですか？
 
 [既知の問題](../Reference/Known-Issues-ja)ページをチェックしてください。一般的に、問題は Reflector アドインの旧式のバージョンがインストールされているか、PowerShell 2.0 がインストールされていない（Windows XP の場合）ことが原因です。
 
@@ -34,7 +34,7 @@ NuGet Package Manager Console では [PowerShell 2.0](http://support.microsoft.c
 ソリューションレベルのパッケージはソリューションに一度だけインストールされ、ソリューション内のすべてのパッケージで使用可能になります。
 プロジェクトレベルのパッケージは、使用したいプロジェクトそれぞれで独立してインストールしなければなりません。
 ソリューションレベルのパッケージでは、NuGet はプロジェクト内を一切変更しませんが、プロジェクトレベルのパッケージでは変更を行います。
-一般的に、ソリューションレベルのパッケージは **Package Manager Console** ウィンドウから呼び出すことができる新しいコマンドをインストールします。
+一般的に、ソリューションレベルのパッケージは**パッケージ マネージャー コンソール**（**Package Manager Console**）ウィンドウから呼び出すことができる新しいコマンドをインストールします。
 
 ## .NET Framework の異なるバージョンをターゲットにするライブラリの複数のバージョンがあります。これをサポートする単一のパッケージをビルドするにはどうすればいいですか？
 
@@ -46,11 +46,11 @@ Visual Studio で、_Help_ > _Microsoft Visual Studio について_ メニュを
 
 ![Visual Studio の拡張機能マネージャーでの NuGet のバージョン](images/nuget-version.png)
 
-代わりに、Package Manager Console を起動して、バージョンを含む NuGet Powershell ホストの情報を出力するように `$host` と入力することもできます。
+代わりに、**パッケージ マネージャー コンソール**（**Package Manager Console**）を起動して、バージョンを含む NuGet Powershell ホストの情報を出力するように `$host` と入力することもできます。
 
 ## Package Manager Console で DTE オブジェクトにアクセスするにはどうすればいいですか？
 
-コンソールは `$DTE` という名前の変数を提供しており、これは `DTE` オブジェクトを返します。[Package Manager Console Powershell リファレンス](../Reference/Package-Manager-Console-PowerShell-Reference-ja)で `Get-Project` コマンドを参照してください。
+コンソールは `$DTE` という名前の変数を提供しており、これは `DTE` オブジェクトを返します。[パッケージ マネージャー コンソール（Package Manager Console） Powershell リファレンス](../Reference/Package-Manager-Console-PowerShell-Reference-ja)で `Get-Project` コマンドを参照してください。
 
 ## リモートの依存先を持つローカルパッケージのインストール中に「Unable to resolve dependency error」と出る理由は何ですか？
 
@@ -84,7 +84,7 @@ Online タブの下から特定のリポジトリを選択すると、そのノ�
 NuGet の目標が、Visual Studio のプロジェクトに対してプロジェクトの変更と参照の追加を可能にすることであることをお忘れなく。
 コマンドラインツールである NuGet.exe は、パッケージのダウンロードとアンパックを行いますが、Visual Studio の自動化を行わずとプロジェクトファイルを変更しません。
 Visual Studio には、NuGet 用のクライアントが 2 つあります。
-PowerShell ベースの **Package Manager Console** と、**Manage NuGet Package** ダイアログボックスです。
+PowerShell ベースの**パッケージ マネージャー コンソール**（**Package Manager Console**）と、**NuGet パッケージの管理**（**Manage NuGet Package**）ダイアログボックスです。
 両方とも NuGet API のラッパーであり、この API はマネージコードで記述されています。
 NuGet.exe はパッケージの作成と公開にも使用されます。
 

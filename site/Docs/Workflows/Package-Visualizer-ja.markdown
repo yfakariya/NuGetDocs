@@ -3,7 +3,7 @@
 
 NuGet 1.4 で追加された新機能では、ソリューションにあるすべてのプロジェクトとそれらのパッケージの依存関係を簡単にビジュアル化できます。
 
-**ツール** -> **Library Package Manager** -> **Package Visualizer** メニュ オプションをクリックして、Package Visualizer を起動します。
+**ツール** -> **ライブラリ パッケージ マネージャー**（**Library Package Manager**） -> **Package Visualizer** メニュ オプションをクリックして、Package Visualizer を起動します。
 
 _**重要な注意事項:** この機能は Visual Studio の DGML サポートを利用しています。ビジュアル化は Visual Studio Ultimate でのみサポートされています。 DGML ダイアグラムの閲覧は Visual Studio Premium 以上でのみサポートされています。_
 

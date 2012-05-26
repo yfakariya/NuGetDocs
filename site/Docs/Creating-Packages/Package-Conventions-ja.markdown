@@ -1,4 +1,4 @@
-﻿<!-- Revision: 0d2451255cd9a57f47bb55d5ed8a348a3dba9666 2011/12/30 2:47:18 -->
+﻿<!-- 5 15 03:24:59 2012 8550d7de4059c8574361248e8e0380af86539fe0 -->
 # パッケージ規約
 
 このページの目的はパッケージ規約の徹底的な解説を始めることです。これらの規約は、パッケージのフォルダー構造や複数の .NET Framework バージョンのサポートといった、パッケージの作成時に NuGet によって必要とされる「強制的な」規約とは異なるものです。強制的な規約については、[パッケージの作成](Creating-and-Publishing-a-Symbol-Package-ja)のドキュメントを参照してください。
@@ -19,4 +19,4 @@
 
 **バージョニングのガイドライン：** NuGet のバージョニングを理解するためには、以下の 3 部作の連載が非常に重要です（かつ手軽でもあります！） [NuGet のバージョニング 第 1 部：DLL ヘルについての見解](http://blog.davidebbo.com/2011/01/nuget-versioning-part-1-taking-on-dll.html)<!--(~/docs/extern/nuget-versioning-part-1-taking-on-dll-ja.markdown)-->、[NuGet のバージョニング 第 2 部：コアアルゴリズム](http://blog.davidebbo.com/2011/01/nuget-versioning-part-2-core-algorithm.html)<!--(~/docs/extern/nuget-versioning-part-2-core-algorithm-ja.markdown)-->、[NuGet のバージョニング 第 3 部：バインディングリダイレクトによる一元化](http://blog.davidebbo.com/2011/01/nuget-versioning-part-3-unification-via.html)<!--(~/docs/extern/nuget-versioning-part-3-unification-via-ja.markdown)-->。
 
-**バージョンの選択：** 一般的に、ライブラリのバージョンにパッケージのバージョンを対応させるとよいでしょう。ただし、ライブラリがあまり一般的なバージョニングスキームを持っていない場合には、NuGet が使用するバージョニングルールを使用しないでください。一般的にパッケージのバージョンをライブラリのバージョンに一致させることを推奨しますが、必須ではありません。
+**バージョンの選択：** 一般的に、ライブラリのバージョンにパッケージのバージョンを対応させるとよいでしょう。ただし、万が一ライブラリがあまり一般的ではないバージョニングスキームを使用している場合に備えて、NuGet のバージョニングルールがあることを忘れないでください。一般的にパッケージのバージョンをライブラリのバージョンに一致させることを推奨しますが、必須ではありません。

@@ -1,4 +1,4 @@
-﻿<!-- 4 12 02:57:02 2012 1f500d3709307f3ba4ffb87f93b69df3fca5bcf2 -->
+﻿<!-- 5 01 03:15:57 2012 9058259c29cb9da62008ccab416219cecb3311e5 -->
 # パッケージの作成と公開
 
 ## はじめに
@@ -317,6 +317,7 @@ NuGet によってサポートされるプロファイルは以下のとおり�
     <tr><td>Silverlight 4.0</td><td>sl4</td><td></td></tr>
     <tr><td>Windows Phone 7.0</td><td>sl3-wp</td><td></td></tr>
     <tr><td>Windows Phone 7.1 (Mango)</td><td>sl4-windowsphone71</td><td></td></tr>
+    <tr><td>Windows RT</td><td>winrt45</td><td>このターゲットは JavaScript プロジェクトにも適用されます。</td></tr>
 </table>
 
 ## パッケージの削除

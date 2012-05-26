@@ -3,7 +3,7 @@
 
 全員がコマンドライン大好き人間なわけではありません。実際、人によっては、パッケージの作成のようなタスクをこなすのに、Windows GUI アプリケーションのほうが快適だと思っています。NuGet Package Explorer という Click-Once アプリケーションによって、パッケージの作成が非常に簡単になります。このアプリケーションはパッケージの調査やパッケージの構成方法を学ぶ優れた手段でもあります。
 
-ビルドシステムにパッケージのビルドを統合することに興味があるならば、[パッケージの作成と発行に NuGet.exe を使用する](~/docs/creating-packages/Creating-and-Publishing-a-Package)のほうが優れています。
+ビルドシステムにパッケージのビルドを統合したいならば、[パッケージの作成と発行に NuGet.exe を使用する](~/docs/creating-packages/Creating-and-Publishing-a-Package)のほうが優れています。
 
 ## インストール
 

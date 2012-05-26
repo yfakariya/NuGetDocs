@@ -2,11 +2,11 @@
 
 # NuGet のインストール
 
-NuGet は Visual Studio の **拡張機能マネージャー** を使用してインストール、および更新できます。インストール済みの Visual Studio に既に NuGet 拡張機能がインストールされているかどうか調べるには、Visual Studio の **ツール** メニューに **Library Package Manager** があるかどうかを見てください。
+NuGet は Visual Studio の **拡張機能マネージャー** を使用してインストール、および更新できます。インストール済みの Visual Studio に既に NuGet 拡張機能がインストールされているかどうか調べるには、Visual Studio の **ツール** メニューに **ライブラリ パッケージ マネージャー**（**Library Package Manager**）があるかどうかを見てください。
 
 ![メニュ](images/Menu.png)
 
-Visual Studio に Library Package Manager （NuGet）拡張機能がまだインストールされていないならば、**拡張機能マネージャー** を使用してインストールできます。
+Visual Studio に**ライブラリ パッケージ マネージャー**（**Library Package Manager**）（NuGet）拡張機能がまだインストールされていないならば、**拡張機能マネージャー** を使用してインストールできます。
 
 ## 拡張機能マネージャーの使用
 

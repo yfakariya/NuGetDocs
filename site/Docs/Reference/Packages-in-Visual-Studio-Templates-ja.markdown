@@ -1,4 +1,4 @@
-﻿<!-- Revision: b883cd649475dc9407c70998d9c5e655ca83a7a4 2011/11/19 10:23:36 -->
+﻿<!-- 5 11 06:04:25 2012 8bad5a4d6c0d5f3091797b8a42738d361c938c8a -->
 # Visual Studio テンプレートでのパッケージ
 
 NuGet は、Visual Studio のプロジェクト テンプレートと項目テンプレートへの追加をサポートします。Visual Studio が NuGet パッケージを含むテンプレートを使用してプロジェクトを作成すると、パッケージがインストールされた状態でプロジェクトが作成されます。このため、この機能はよく「プリインストール済み NuGet パッケージ」機能と言われます。
@@ -51,7 +51,14 @@ NuGet は、Visual Studio のプロジェクト テンプレートと項目テ�
     &lt;/packages&gt;</code></pre>
     `repository` 属性にはリポジトリの種類（「extension」）を、`repositoryId` には VSIX の一意な識別子（つまり、拡張機能の vsixmanifest ファイルの [`ID` 属性](http://msdn.microsoft.com/en-us/library/dd393688.aspx) の値）を指定します。
 
-[カスタム拡張機能のコンテンツ](http://msdn.microsoft.com/en-us/library/dd393737.aspx) として nupkg ファイルを追加し、かつ VSIX パッケージの `Packages` というフォルダーにそれらを配置するようにしなければなりません。nupkg ファイルは、プロジェクトテンプレートと同じ VSIX に配置できます。または、配置のシナリオとしてそちらのほうが有用であれば、別の VSIX にパッケージを配置できます（自分が管理していない VSIX を参照すべきではない、ということだけは注意しておきます。それらのパッケージが将来的に変更され、プロジェクトまたは項目テンプレートが動作しなくなる可能性があるためです）。
+2. [カスタム拡張機能のコンテンツ](http://msdn.microsoft.com/en-us/library/dd393737.aspx) として nupkg ファイルを追加します。
+    <pre><code>&lt;CustomExtension Type="Moq.4.0.10827.nupkg"&gt;
+              packages/Moq.4.0.10827.nupkg&lt;/CustomExtension&gt;
+    ...
+    </code></pre>
+    これらがVSIX パッケージの `Packages` というフォルダーにそれらを配置するようにしてください。
+
+nupkg ファイルは、プロジェクトテンプレートと同じ VSIX に配置できます。または、配置のシナリオとしてそちらのほうが有用であれば、別の VSIX にパッケージを配置できます（自分が管理していない VSIX を参照すべきではない、ということだけは注意しておきます。それらのパッケージが将来的に変更され、プロジェクトまたは項目テンプレートが動作しなくなる可能性があるためです）。
 
 ### テンプレートパッケージリポジトリ
 
@@ -67,7 +74,14 @@ NuGet は、Visual Studio のプロジェクト テンプレートと項目テ�
 
 ## ベストプラクティス
 
-1. VSIX が NuGet VSIX への依存関係を宣言するようにします。
+1. VSIX が NuGet VSIX への依存関係を宣言するよう、VSIX マニフェストに参照を追加します。
+    <pre><code>&lt;Reference Id="NuPackToolsVsix.Microsoft.67e54e40-0ae3-42c5-a949-fddf5739e7a5" MinVersion="1.7.30402.9028"&gt;
+    &lt;Name&gt;NuGet Package Manager&lt;/Name&gt;
+    &lt;MoreInfoUrl&gt;http://docs.nuget.org/&lt;/MoreInfoUrl&gt;
+    &lt;/Reference&gt;
+    ....
+    </code></pre>
+
 2. .vstemplate ファイルの [`<PromptForSaveOnCreation>`](http://msdn.microsoft.com/ja-jp/library/twfxayz5.aspx) を設定することで、プロジェクトまたは項目テンプレートが作成時に保存されるように要求します。
 
 ## VS テンプレート内のパッケージのサンプルプロジェクト

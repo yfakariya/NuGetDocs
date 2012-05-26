@@ -11,25 +11,25 @@ NuGet は .NET Framework を使用する Visual Studio プロジェクトでの�
 
 ## Visual Studio の NuGet ユーザーインターフェイス
 
-NuGet は Visual Studio 2010、Visual Web Developer 2010、Windows Phone Developer Tools 7.1 で動作します。**Manage NuGet Packages** ダイアログボックスを使用するか、Visual Studio のウィンドウでのみ使用できる **Package Manager Console** 内の PowerShell コマンドラインコマンドを使用して、パッケージの検索、インストール、削除を実行できます。
+NuGet は Visual Studio 2010、Visual Web Developer 2010、Windows Phone Developer Tools 7.1 で動作します。**NuGet パッケージの管理**（**Manage NuGet Packages**）ダイアログボックスを使用するか、Visual Studio のウィンドウでのみ使用できる**パッケージ マネージャー コンソール**（**Package Manager Console**）内の PowerShell コマンドラインコマンドを使用して、パッケージの検索、インストール、削除を実行できます。
 両方とも Visual Studio のメインメニュからアクセスできます。ソリューション エクスプローラーのコンテキストメニュからダイアログボックスを開くこともできます。
 
 ### Manage NuGet Packages ダイアログボックス
 
-以下の図は **Manage NuGet Packages** ダイアログボックスを示しています。公式のフィードで使用可能なパッケージを見るには、**Online** タブをクリックしてください。
+以下の図は**NuGet パッケージの管理**（**Manage NuGet Packages**）ダイアログボックスを示しています。公式のフィードで使用可能なパッケージを見るには、**Online** タブをクリックしてください。
 
 ![Manage NuGet Packages ダイアログ](images/Manage-NuGet-Packages-Dialog.png)
 
-**Manage NuGet Packages** ダイアログボックスの使用方法については、[Manage NuGet Packages Dialog ボックスの使用](Managing-NuGet-Packages-Using-The-Dialog-ja)
+**NuGet パッケージの管理**（**Manage NuGet Packages**）ダイアログボックスの使用方法については、[NuGet パッケージの管理（Manage NuGet Packages）ダイアログボックスの使用](Managing-NuGet-Packages-Using-The-Dialog-ja)
 を参照してください。
 
-## Package Manager Console ウィンドウ
+## パッケージ マネージャー コンソール（Package Manager Console）ウィンドウ
 
-以下のイラストは **Package Manager Console** ウィンドウを示しています。
+以下のイラストは**パッケージ マネージャー コンソール**（**Package Manager Console**）ウィンドウを示しています。
 
-![Package Manager Console](images/package-console.png)
+![パッケージ マネージャー コンソール](images/package-console.png)
 
-Package Manager Console の使用方法については、[Package Manager Console を使用した NuGet パッケージの検索とインストール](Using-the-Package-Manager-Console-ja) を参照してください。
+パッケージ マネージャー コンソール（Package Manager Console）の使用方法については、[パッケージ マネージャー コンソールを使用した NuGet パッケージの検索とインストール](Using-the-Package-Manager-Console-ja) を参照してください。
 
 ## サポートされるオペレーティングシステム
 

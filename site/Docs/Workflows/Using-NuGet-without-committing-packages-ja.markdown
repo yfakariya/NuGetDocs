@@ -11,7 +11,7 @@
 
 既に NuGet を使用しているか、または使用を計画しているソリューションがあり、パッケージをコミットしないワークフローをセットアップしたいとしましょう。
 
-ソリューション エクスプローラーで _ソリューション_ ノードを右クリックし、_Enable NuGet Package Restore_ を選択します。
+ソリューション エクスプローラーで _ソリューション_ ノードを右クリックし、_NuGet パッケージの復元の有効化_（_Enable NuGet Package Restore_）を選択します。
 
 ![Enable NuGet Package Restore コンテキストメニュ項目](images/enable-package-restore.png)
 

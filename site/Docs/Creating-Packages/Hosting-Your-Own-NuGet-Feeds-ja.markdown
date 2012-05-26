@@ -12,30 +12,30 @@
 
 ![ローカルの NuGet フィードフォルダー](images/LocalNuGetFeed-folder.png)
 
-次に、そのフォルダーを NuGet フィードの場所として指定します。Visual Studio の **ツール** メニュから **Library Package Manager** を選択し、**Packae Manager Settings** をクリックします。
+次に、そのフォルダーを NuGet フィードの場所として指定します。Visual Studio の **ツール**（**Tools**）メニュから **ライブラリ パッケージ マネージャー**（**Library Package Manager**）を選択し、**パッケージ マネージャーの設定**（**Package Manager Settings**）をクリックします。
 
 ![メニュでの Package Manager の設定](images/Package-Manager-Settings-in-menu.png)
 
-**Options** ダイアログボックスが表示されます。
+**オプション**（**Options**）ダイアログボックスが表示されます。
 
-![Options ダイアログボックス](images/Options-dialog-box.png)
+![オプションダイアログボックス](images/Options-dialog-box.png)
 
-**Name** テキストボックスには、フィードの名前を入力します。
-**Source** テキストボックスには、パッケージのあるフォルダーのパスを入力します。
+**名前**（**Name**）テキストボックスには、フィードの名前を入力します。
+**ソース**（**Source**）テキストボックスには、パッケージのあるフォルダーのパスを入力します。
 
-![新しいフィードのない Available Package Sources ダイアログボックス](images/Available-Package-Sources-without-new-feed.png)
+![新しいフィードのない利用可能なパッケージ ソース ダイアログボックス](images/Available-Package-Sources-without-new-feed.png)
 
-**Add** をクリックします。ローカルのフォルダーがもう一つの NuGet フィードソースになります。
+**追加**（**Add**）をクリックします。ローカルのフォルダーがもう一つの NuGet フィードソースになります。
 
-![新しいフィードのある Available Package Sources ダイアログボックス](images/Available-Package-Sources-with-new-feed.png)
+![新しいフィードのある利用可能なパッケージ ソース ダイアログボックス](images/Available-Package-Sources-with-new-feed.png)
 
-この新しいフィードを使用してパッケージをインストールするには、**Package Manager Console** ウィンドウで、**Package source** リストで新しいフィードを選択します。
+この新しいフィードを使用してパッケージをインストールするには、**パッケージ マネージャー コンソール**（**Package Manager Console**）ウィンドウで、**パッケージ ソース**（**Package source**）リストで新しいフィードを選択します。
 
-![Package Manager Console でのローカルフィードの選択](images/Selecting-local-feed-in-Package-Manager-Console.png)
+![パッケージ マネージャー コンソールでのローカルフィードの選択](images/Selecting-local-feed-in-Package-Manager-Console.png)
 
-**Manage NuGet Packages** ダイアログボックスの **Online** タブで新しいフィードを選択することもできます。
+**NuGet パッケージの管理**（**Manage NuGet Packages**）ダイアログボックスの**オンライン**（**Online**）タブで新しいフィードを選択することもできます。
 
-![Manage NuGet Packages ダイアログでのローカルフィードの選択](images/Selecting-local-feed-in-Add-Library-Package-Reference.png)
+![NuGet パッケージの管理ダイアログでのローカルフィードの選択](images/Selecting-local-feed-in-Add-Library-Package-Reference.png)
 
 ## リモートフィードの作成
 
@@ -55,9 +55,9 @@ IIS を実行しているサーバー上でリモート（または内部）フ�
 
 ### ステップ 2：NuGet.Server Package をインストールする
 
-ここで、**参照** ノードを右クリックして **Manage NuGet Packages** を選択し、NuGet のダイアログを起動します（または、Package Manager Console を使用して、 `Install-Package NuGet.Server` と入力します）。
+ここで、**参照** ノードを右クリックして **NuGet パッケージの管理**（**Manage NuGet Packages**）を選択し、NuGet のダイアログを起動します（またはパッケージ マネージャー コンソール（Package Manager Console）を使用して、 `Install-Package NuGet.Server` と入力します）。
 
-**Online** タブをクリックしてから、右上の検索ボックスに **NuGet.Server** と入力します。
+**オンライン**（**Online**）タブをクリックしてから、右上の検索ボックスに **NuGet.Server** と入力します。
 次の画像のように表示される **NuGet.Server** パッケージの **Install** をクリックします。
 
 ![NuGet.Server パッケージ](images/NuGet.Server-package.png)

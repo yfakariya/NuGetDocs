@@ -1,4 +1,4 @@
-﻿<!-- Revision: 6bf8ca8e0121d58c3735cb260b433c10caf4e0c7 2011/11/19 5:55:14 -->
+﻿<!-- 4 17 06:52:34 2012 0d8830f8c2067c292c497cd65ac92afb0ab78dd9 -->
 # バージョニング
 
 NuGet パッケージの作成時には、`.nuspec` ファイルにパッケージの依存先を指定できます。依存先パッケージのどのバージョンが必要なのかも指定します。NuGet パッケージの作成と .nuspec ファイルの形式の情報については、[パッケージの作成と公開](../creating-packages/creating-and-publishing-a-package-ja)と[.nuspec ファイル形式の仕様](nuspec-reference-ja)を参照してください。

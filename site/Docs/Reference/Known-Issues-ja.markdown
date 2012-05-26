@@ -1,9 +1,15 @@
-﻿<!-- Revision: 5baa8cd5ad9007583f321ba44469afdd172b7a95  2011/12/13 10:42:14 -->
+﻿<!-- 5 26 11:01:47 2012 7e593278e0d81b00c0f9b73e8b7aa112d5c83137 -->
 # NuGet の既知の問題
 
-## Reflector Visual Studio Add-In もインストールされている場合、Package Manager Console が例外をスローします。
+## NuGet 1.8 の Windows XP との非互換性（HotFix を準備中です）
 
-Package Manager Console の実行時に、Reflector Visual Studio Add-In がインストールされていると、以下の例外メッセージに遭遇する可能性があります。
+NuGet 1.8 のリリース直後に、1.8 での暗号の変更が、 Windows XP で使用しているユーザーで問題となることがわかりました。Windows XP マシンには NuGet 1.8 をインストールしないでください。NuGet 1.8 をインストールしてしまった場合には、1.8 をアンインストールして、 [このダウンロードリンク](http://nuget.codeplex.com/downloads/get/382255) から NuGet 1.7 を再インストールしてください。
+
+このリグレッションを解消するために、NuGet 1.8.1 のリリースを準備中です。この問題に対する [CodePlex のディスカッションのスレッド](http://nuget.codeplex.com/discussions/356928) を参照してください。また、このリグレッションの修正用の [ワークアイテム](http://nuget.codeplex.com/workitem/2240) になっています。
+
+## Reflector Visual Studio Add-In もインストールされている場合、パッケージ マネージャー コンソール（Package Manager Console）が例外をスローします。
+
+パッケージ マネージャー コンソール（Package Manager Console）の実行時に、Reflector Visual Studio Add-In がインストールされていると、以下の例外メッセージに遭遇する可能性があります。
 
     The following error occurred while loading the extended type data file: 
     Microsoft.PowerShell.Core, C:\Windows\SysWOW64\WindowsPowerShell\v1.0\types.ps1xml(2950) : 
@@ -64,15 +70,15 @@ Visual Studio 2010 SP1 を実行している場合、古いバージョンがイ
 Visual Studio 拡張機能マネージャー経由で NuGet をアンインストールしようとすると、アンインストールボタンが無効になっていることに気付くことでしょう。NuGet ではインストールとアンインストールに管理者のアクセス権を必要とします。拡張機能をアンインストールするには、管理者権限で Visual Studio を再起動してください。
 NuGet を使用するの管理者のアクセス権は必要ありません。
 
-## Windows XP で開くと Package Manager Console がクラッシュします。何が悪いのでしょうか？
+## Windows XP で開くとパッケージ マネージャー コンソール（Package Manager Console）がクラッシュします。何が悪いのでしょうか？
 
 NuGet は PowerShell 2.0 のランタイムを必要とします。Windows XP は、既定では PowerShell 2.0 がありません。
 PowerShell 2.0 ランタイムはこのリンク <a href="http://support.microsoft.com/kb/968929">http://support.microsoft.com/kb/968929</a> からダウンロードできます。
-インストールしたら、Visual Studio を再起動すれば、Package Manager Console が開けるようになっているはずです。
+インストールしたら、Visual Studio を再起動すれば、パッケージ マネージャー コンソール（Package Manager Console）が開けるようになっているはずです。
 
-## Package Manager Console が開いている状態で終了すると、Visual Studio 2010 SP1 のベータ版がクラッシュします。
+## パッケージ マネージャー コンソール（Package Manager Console）が開いている状態で終了すると、Visual Studio 2010 SP1 のベータ版がクラッシュします。
 
-Visual Studio 2010 SP1 のベータ版がインストールされている場合、Package Manager Console を開いたまま Visual Studio を閉じると、クラッシュすることに気付くことでしょう。これは Visual Studio の既知の問題であり、SP1 の RTM リリースでは修正されています。現在のところ、クラッシュを単に無視するか、可能ならば SP1 のベータ版をアンインストールしてください。
+Visual Studio 2010 SP1 のベータ版がインストールされている場合、パッケージ マネージャー コンソール（Package Manager Console）を開いたまま Visual Studio を閉じると、クラッシュすることに気付くことでしょう。これは Visual Studio の既知の問題であり、SP1 の RTM リリースでは修正されています。現在のところ、クラッシュを単に無視するか、可能ならば SP1 のベータ版をアンインストールしてください。
 
 ## 名前空間 'schemas.microsoft.com/packaging/2010/07/nuspec.xsd' の要素 'metadata' は不正な子要素を持つという例外が発生します。
 
@@ -94,7 +100,7 @@ NuGet のプレリリース版でビルドしたパッケージをインスト�
 
 ## 稀なケースにおいて、コード分析付きのコンパイルがエラーになります。
 
-Package Manager console を使用して FluentNHibernate をインストールして、「コード分析」を有効にしてプロジェクトをコンパイルすると、以下のエラーになるかもしれません。
+パッケージ マネージャー コンソール（Package Manager Console）を使用して FluentNHibernate をインストールして、「コード分析」を有効にしてプロジェクトをコンパイルすると、以下のエラーになるかもしれません。
 
     Error 3 CA0058 : The referenced assembly 
     'NHibernate, Version=3.0.0.2001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' 
