@@ -141,7 +141,7 @@ After the folder is copied to the target project, it is added to the `$env:Path 
 * __content__ - Files in the *content* folder are copied to the root of your application when the package is installed. 
 
 __Think of the _Content_ folder as the root of your target application__. For example, if I want 
-to a package to add an image in the _/images_ directory of the target application, make 
+a package to add an image in the _/images_ directory of the target application, make 
 sure to place the image in the _Content/images_ folder of the package.
 
 #### Create the manifest
@@ -359,6 +359,7 @@ The following provides examples of common targets.
     <tr><td>Silverlight 4.0</td><td>sl4</td><td></td></tr>
     <tr><td>Windows Phone 7.0</td><td>sl3-wp</td><td></td></tr>
     <tr><td>Windows Phone 7.1 (Mango)</td><td>sl4-windowsphone71</td><td></td></tr>
+    <tr><td>Windows RT</td><td>winrt45</td><td>This also applies to Javascript projects.</td></tr>
 </table>
 
 ## Deleting packages
