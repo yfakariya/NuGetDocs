@@ -1,11 +1,5 @@
-﻿<!-- 5 26 11:01:47 2012 7e593278e0d81b00c0f9b73e8b7aa112d5c83137 -->
+﻿<!-- 5 30 06:55:10 2012 9f902b320baaff32ec9a2ad075d2ca4db39afc02 -->
 # NuGet の既知の問題
-
-## NuGet 1.8 の Windows XP との非互換性（HotFix を準備中です）
-
-NuGet 1.8 のリリース直後に、1.8 での暗号の変更が、 Windows XP で使用しているユーザーで問題となることがわかりました。Windows XP マシンには NuGet 1.8 をインストールしないでください。NuGet 1.8 をインストールしてしまった場合には、1.8 をアンインストールして、 [このダウンロードリンク](http://nuget.codeplex.com/downloads/get/382255) から NuGet 1.7 を再インストールしてください。
-
-このリグレッションを解消するために、NuGet 1.8.1 のリリースを準備中です。この問題に対する [CodePlex のディスカッションのスレッド](http://nuget.codeplex.com/discussions/356928) を参照してください。また、このリグレッションの修正用の [ワークアイテム](http://nuget.codeplex.com/workitem/2240) になっています。
 
 ## Reflector Visual Studio Add-In もインストールされている場合、パッケージ マネージャー コンソール（Package Manager Console）が例外をスローします。
 
@@ -63,7 +57,8 @@ Visual Studio 2010 SP1 を実行している場合、古いバージョンがイ
 
 ログを参照すると、`SignatureMismatchException` の存在が確認できるでしょう。
 
-回避策は、単に NuGet をアンインストールして、Visual Studio 拡張機能ギャラリーから NuGet をインストールすることです。詳細情報については <a href="http://support.microsoft.com/kb/2581019">http://support.microsoft.com/kb/2581019</a> を参照してください。
+これが起きないようにするには、[Visual Studio 2010 SP1 の hotfix](http://bit.ly/vsixcertfix)をインストールしてください。
+または、単に NuGet をアンインストールして、Visual Studio 拡張機能ギャラリーから NuGet をインストールしても回避できます。詳細情報については <a href="http://support.microsoft.com/kb/2581019">http://support.microsoft.com/kb/2581019</a> を参照してください。
 
 ## アンインストールボタンが無効になっていますか？　NuGet のインストールとアンインストールには管理者権限が必要です。
 

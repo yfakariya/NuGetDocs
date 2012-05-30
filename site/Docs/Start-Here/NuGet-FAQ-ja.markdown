@@ -76,6 +76,7 @@ Online タブの下から特定のリポジトリを選択すると、そのノ�
 ## NuGet は Mono をサポートしますか？
 
 コマンドラインアプリケーション（*nuget.exe*）は Mono でビルドおよび実行でき、Mono でパッケージを作成できます。
+ただし、これは基本的に Windows 上での Mono には当てはまりますが、Linux や OS X 上の Mono には既知の問題があります。既知の問題を参照するには、[Issue List で Mono を検索してください](http://nuget.codeplex.com/workitem/list/basic?field=Votes&direction=Descending&issuesToDisplay=Open&keywords=mono&emailSubscribedItemsOnly=false)。
 
 ## NuGet 用のコマンドラインツールはありますか？
 

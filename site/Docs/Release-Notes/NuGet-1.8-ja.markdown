@@ -9,11 +9,11 @@ Visual Studio 2010 SP1 を使用している場合には、古いバージョン
 
 注：Visual Studio が拡張機能のアンインストールを許可しない（アンインストールボタンが無効になっている）場合には、「管理者として実行」を使用して Visual Studio を再起動する必要があるかもしれません。
 
-## NuGet 1.8 の Windows XP との非互換性（HotFix を準備中です）
+## NuGet 1.8 の Windows XP との非互換性（HotFix が出ました）
 
-NuGet 1.8 のリリース直後に、1.8 での暗号の変更が、 Windows XP で使用しているユーザーで問題となることがわかりました。Windows XP マシンには NuGet 1.8 をインストールしないでください。NuGet 1.8 をインストールしてしまった場合には、1.8 をアンインストールして、 [このダウンロードリンク](http://nuget.codeplex.com/downloads/get/382255) から NuGet 1.7 を再インストールしてください。
+NuGet 1.8 のリリース直後に、1.8 での暗号の変更が、 Windows XP で使用しているユーザーで問題となることがわかりました。
 
-このリグレッションを解消するために、NuGet 1.8.1 のリリースを準備中です。この問題に対する [CodePlex のディスカッションのスレッド](http://nuget.codeplex.com/discussions/356928) を参照してください。また、このリグレッションの修正用の [ワークアイテム](http://nuget.codeplex.com/workitem/2240) になっています。
+このリグレッションを解消するための hotfix をリリースしました。Visual Studio Extension Gallery から NuGet を更新すると、この hotfix が適用されます。
 
 ## 新機能
 
